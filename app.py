@@ -189,6 +189,13 @@ with st.sidebar:
     st.divider()
     st.caption("Stichtagskurs: 31.12.2024\nQuelle: fx_rates.json")
 
+# ---------------------------------------------------------------------------
+# Pipeline ausführen
+# ---------------------------------------------------------------------------
+
+guv, bilanz, daten, ic_log, min_log = _run_pipeline(chf_s, chf_d, pln_s, pln_d)
+
+with st.sidebar:
     st.markdown("---")
     st.markdown("**⬇️ Excel-Export**")
     if st.button("Konzernabschluss generieren"):
@@ -206,12 +213,6 @@ with st.sidebar:
             file_name="Konzernabschluss_2024.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         )
-
-# ---------------------------------------------------------------------------
-# Pipeline ausführen
-# ---------------------------------------------------------------------------
-
-guv, bilanz, daten, ic_log, min_log = _run_pipeline(chf_s, chf_d, pln_s, pln_d)
 
 # ---------------------------------------------------------------------------
 # KPI-Zeile

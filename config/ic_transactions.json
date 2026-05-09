@@ -1,0 +1,108 @@
+[
+  {
+    "id": "IC-G01",
+    "typ": "guv_ertrag_aufwand",
+    "beschreibung": "DE liefert an AT und NL (Umsatz DE / Materialaufwand AT+NL)",
+    "sender": "muster_de",
+    "empfaenger": ["muster_at", "muster_nl"],
+    "betrag_teur": 8400,
+    "konto_sender": "Intercompany (Muster AT GmbH / Muster NL B.V.)",
+    "konto_empfaenger_at": "IC-Materialaufwand (Muster DE GmbH)",
+    "konto_empfaenger_nl": "IC-Materialaufwand (Muster DE GmbH)"
+  },
+  {
+    "id": "IC-G02",
+    "typ": "guv_ertrag_aufwand",
+    "beschreibung": "AT liefert an DE",
+    "sender": "muster_at",
+    "empfaenger": ["muster_de"],
+    "betrag_teur": 6200,
+    "konto_sender": "Intercompany (Muster DE GmbH)",
+    "konto_empfaenger": "IC-Materialaufwand (Muster AT GmbH / Muster NL B.V.)"
+  },
+  {
+    "id": "IC-G03",
+    "typ": "guv_ertrag_aufwand",
+    "beschreibung": "CH liefert an DE",
+    "sender": "muster_ch",
+    "empfaenger": ["muster_de"],
+    "betrag_teur": 5500,
+    "konto_sender": "Intercompany (Muster DE GmbH)",
+    "konto_empfaenger": "IC-Materialaufwand (Muster CH AG)"
+  },
+  {
+    "id": "IC-G04",
+    "typ": "guv_ertrag_aufwand",
+    "beschreibung": "PL liefert an DE",
+    "sender": "muster_pl",
+    "empfaenger": ["muster_de"],
+    "betrag_teur": 15000,
+    "konto_sender": "Intercompany (Muster DE GmbH)",
+    "konto_empfaenger": "IC-Materialaufwand (Muster PL Sp. z o.o.)"
+  },
+  {
+    "id": "IC-G05",
+    "typ": "guv_ertrag_aufwand",
+    "beschreibung": "NL liefert an DE",
+    "sender": "muster_nl",
+    "empfaenger": ["muster_de"],
+    "betrag_teur": 7200,
+    "konto_sender": "Intercompany (Muster DE GmbH)",
+    "konto_empfaenger": "IC-Materialaufwand (Muster AT GmbH / Muster NL B.V.)"
+  },
+  {
+    "id": "IC-B01",
+    "typ": "schuldenkonsolidierung",
+    "beschreibung": "IC-Forderung DE gegen AT / IC-Verbindlichkeit AT gegen DE",
+    "glaeubiger": "muster_de",
+    "schuldner": "muster_at",
+    "betrag_forderung_teur": 4200,
+    "betrag_verbindlichkeit_teur": 4200,
+    "konto_forderung": "IC-Forderungen",
+    "konto_verbindlichkeit": "IC-Verbindlichkeiten"
+  },
+  {
+    "id": "IC-B02",
+    "typ": "schuldenkonsolidierung",
+    "beschreibung": "IC-Forderung AT gegen DE / IC-Verbindlichkeit DE gegen AT",
+    "glaeubiger": "muster_at",
+    "schuldner": "muster_de",
+    "betrag_forderung_teur": 3800,
+    "betrag_verbindlichkeit_teur": 3800,
+    "konto_forderung": "IC-Forderungen",
+    "konto_verbindlichkeit": "IC-Verbindlichkeiten"
+  },
+  {
+    "id": "IC-B03",
+    "typ": "schuldenkonsolidierung",
+    "beschreibung": "IC-Forderung CH gegen DE / IC-Verbindlichkeit DE gegen CH",
+    "glaeubiger": "muster_ch",
+    "schuldner": "muster_de",
+    "betrag_forderung_teur": 2900,
+    "betrag_verbindlichkeit_teur": 2900,
+    "konto_forderung": "IC-Forderungen",
+    "konto_verbindlichkeit": "IC-Verbindlichkeiten"
+  },
+  {
+    "id": "IC-B04",
+    "typ": "schuldenkonsolidierung",
+    "beschreibung": "IC-Forderung PL gegen DE / IC-Verbindlichkeit DE gegen PL (Saldo 500 TEUR offen)",
+    "glaeubiger": "muster_pl",
+    "schuldner": "muster_de",
+    "betrag_forderung_teur": 7000,
+    "betrag_verbindlichkeit_teur": 7500,
+    "konto_forderung": "IC-Forderungen",
+    "konto_verbindlichkeit": "IC-Verbindlichkeiten"
+  },
+  {
+    "id": "IC-B05",
+    "typ": "schuldenkonsolidierung",
+    "beschreibung": "IC-Forderung NL gegen DE / IC-Verbindlichkeit DE gegen NL",
+    "glaeubiger": "muster_nl",
+    "schuldner": "muster_de",
+    "betrag_forderung_teur": 3600,
+    "betrag_verbindlichkeit_teur": 3600,
+    "konto_forderung": "IC-Forderungen",
+    "konto_verbindlichkeit": "IC-Verbindlichkeiten"
+  }
+]

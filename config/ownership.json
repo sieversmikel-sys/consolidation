@@ -1,0 +1,37 @@
+{
+  "muster_de": {
+    "name": "Muster DE GmbH",
+    "land": "Deutschland",
+    "waehrung": "EUR",
+    "beteiligung": 1.00,
+    "minderheit": 0.00
+  },
+  "muster_at": {
+    "name": "Muster AT GmbH",
+    "land": "Österreich",
+    "waehrung": "EUR",
+    "beteiligung": 1.00,
+    "minderheit": 0.00
+  },
+  "muster_ch": {
+    "name": "Muster CH AG",
+    "land": "Schweiz",
+    "waehrung": "CHF",
+    "beteiligung": 0.80,
+    "minderheit": 0.20
+  },
+  "muster_pl": {
+    "name": "Muster PL Sp. z o.o.",
+    "land": "Polen",
+    "waehrung": "PLN",
+    "beteiligung": 1.00,
+    "minderheit": 0.00
+  },
+  "muster_nl": {
+    "name": "Muster NL B.V.",
+    "land": "Niederlande",
+    "waehrung": "EUR",
+    "beteiligung": 0.75,
+    "minderheit": 0.25
+  }
+}

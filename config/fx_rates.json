@@ -1,0 +1,38 @@
+{
+  "stichtag": "2024-12-31",
+  "beschreibung": "Wechselkurse fuer die Konzernkonsolidierung 2024",
+  "kurse": {
+    "CHF": {
+      "waehrung": "Schweizer Franken",
+      "gesellschaft": "Muster CH AG",
+      "stichtagskurs": 1.058,
+      "durchschnittskurs": 1.042,
+      "historischer_kurs": 1.030,
+      "erwerbsdatum": "2019-03-15",
+      "einheit": "1 CHF = X EUR"
+    },
+    "PLN": {
+      "waehrung": "Polnischer Zloty",
+      "gesellschaft": "Muster PL Sp. z o.o.",
+      "stichtagskurs": 0.233,
+      "durchschnittskurs": 0.228,
+      "historischer_kurs": 0.215,
+      "erwerbsdatum": "2021-07-01",
+      "einheit": "1 PLN = X EUR"
+    },
+    "EUR": {
+      "waehrung": "Euro",
+      "gesellschaften": ["Muster DE GmbH", "Muster AT GmbH", "Muster NL B.V."],
+      "stichtagskurs": 1.0,
+      "durchschnittskurs": 1.0,
+      "historischer_kurs": 1.0,
+      "einheit": "1 EUR = 1 EUR"
+    }
+  },
+  "hinweise": {
+    "guv": "Durchschnittskurs fuer alle GuV-Positionen (IAS 21)",
+    "bilanz": "Stichtagskurs fuer alle Bilanzpositionen ausser Eigenkapital",
+    "eigenkapital": "Historischer Kurs (Zugangskurs bei Erstkonsolidierung)",
+    "cta": "Differenz -> OCI (Other Comprehensive Income), nicht GuV-wirksam"
+  }
+}

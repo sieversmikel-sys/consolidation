@@ -165,7 +165,25 @@ with st.sidebar:
         "CHF_EUR": {"stichtag": 1.058, "durchschnitt": 1.042},
         "PLN_EUR": {"stichtag": 0.233, "durchschnitt": 0.228},
     }
-    fx_raw = json.loads(_fx_path.read_text()) if _fx_path.exists() else _fx_defaults
+    if _fx_path.exists():
+        _raw = json.loads(_fx_path.read_text())
+        if "CHF_EUR" in _raw:
+            fx_raw = _raw
+        else:
+            kurse = _raw.get("kurse", {})
+            fx_raw = {
+                "stichtag": _raw.get("stichtag", "2024-12-31"),
+                "CHF_EUR": {
+                    "stichtag":    kurse.get("CHF", {}).get("stichtagskurs",    1.058),
+                    "durchschnitt": kurse.get("CHF", {}).get("durchschnittskurs", 1.042),
+                },
+                "PLN_EUR": {
+                    "stichtag":    kurse.get("PLN", {}).get("stichtagskurs",    0.233),
+                    "durchschnitt": kurse.get("PLN", {}).get("durchschnittskurs", 0.228),
+                },
+            }
+    else:
+        fx_raw = _fx_defaults
 
     st.subheader("CHF → EUR")
     chf_s = st.number_input("Stichtagskurs (Bilanz)",  value=fx_raw["CHF_EUR"]["stichtag"],

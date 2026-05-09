@@ -3,3 +3,4 @@ openpyxl>=3.1
 streamlit>=1.35
 xlsxwriter>=3.0
 numpy>=1.26
+anthropic>=0.25
